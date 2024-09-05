@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+.navbar{
+  margin-top: 2%;
+}
+ .logo{
+    float: left;
+    margin-left: 2%;
+ }
+.news-section{
+  margin-left: 3%;
+}
+.close-btn{
+  display: none;
+}
+.menu{
+  display: none;
+}
+.nav-container ul{
+  list-style: none;
+  display:flex;
+  margin-left: 45%;
+  align-items: center;
+  justify-items:center;
+  margin-bottom: 50px;
+
+}
+.nav-container ul li a{
+  display: flex;
+  color:grey;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.nav-container ul li a:hover{
+  color:hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.side-section{
+  border: 2px solid;
+  padding: 20px;
+  background-color: hsl(240, 100%, 5%);
+  width: 30%;
+  float: right;
+  margin-right: 11%;
+}
+.side-section h1{
+    color: hsl(35, 77%, 62%);
+    font-weight: 600;
+}
+.side-section-info{
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: hsl(36, 100%, 99%);
+  /* max-height: 300px; */
+  line-height: 20px;
+  padding: 10px;
+  border-bottom: 2px solid hsl(233, 8%, 79%);
+}
+.side-section-info h3:hover{
+  color:hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.news-details-text{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.news-details-text h1{
+  color: hsl(240, 100%, 5%);
+  font-size: 45px;
+  font-weight: 700;
+}
+.news-details-p{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Inter";
+  color: grey;
+  width: 50%;
+}
+.news-details-text button{
+  background-color: hsl(5, 85%, 63%);
+  color:hsl(36, 100%, 99%);
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+}
+.news-details-text button:hover{
+  background-color:hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+.trending-info{
+  display: flex;
+  margin-top: 20px;
+}
+.trending-info img{
+  width: 100px;
+  margin-right: 10px;
+}
+.trending-info-1{
+  display: flex;
+  width: 400px;
+  justify-content:center;
+}
+.trending-info-1 h2:hover{
+  color:hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+.trending-info-1 h1{
+  color:hsl(5, 85%, 63%);
+}
+.trending-info-1 p{
+  color:grey;
+  font-size: 15px;
+}
+.trending-info-1 h2{
+  color:hsl(240, 100%, 5%);
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+    .close-btn{
+      display: block;
+    }
+    .trending-info{
+      display: block;
+    }
+    .news-details-text{
+      display: block;
+    }
+    .side-section-info{
+      width: 300px;
+    }
+    .news-details-text h1{
+      font-size: 20px;
+    }
+    button{
+      margin-bottom: 10px;
+    }
+    .trending-info-1{
+      display: flex;
+      gap: 10px;
+    }
+    .nav-container{
+      width: 200px;
+      display: inline-block;
+      flex-direction: column;
+      height: 100px;
+    }
+    .menu{
+      display: block;
+      object-fit: contain;
+      margin-right: 40px;
+      width: 50px ;
+    }
+    .close-btn{
+      width: 30px;
+    }
+
+}
